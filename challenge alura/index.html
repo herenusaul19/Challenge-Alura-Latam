@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Alura Latam</title>
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https: //fonts.googleapis.com/css2? family = Anton & family = DM + Sans: wght @ 400; 500; 700 & family = Open + Sans & display = swap "rel =" stylesheet ">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'rel='stylesheet'>
+
+    <script  type= "module"  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+    <script  nomodule  src= "https: // unpkg .com / ionicons @ 5.5.2 / dist / ionicons / ionicons.js "></script>
+
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+ <header>
+    <div class="top">
+        <img src="./img/alura.png" alt="">
+        <div class="usuario">
+            <span class="user"> Challenge Alura Latam</span>
+            <span class="category">Practica Encriptador</span>
+            <span class="category">principiante de programación</span> 
+        </div>
+    </div>
+
+    <div class="typewriter-effect">
+        <div class="text" id="typewriter-text"></div>
+     </div>
+
+    <form id="formulario" class="menu" >
+        <input type="text" name="letras" placeholder="Ingrese su texto" onkeypress="return sololetras(event)" onpaste="return false" id="texto" autocomplete="off"  required >
+        <button class="btn btn1 type="submit"  onclick="encriptar(this)" id="boton">Encriptar</button>
+        <button class="btn btn1 type="submit" onclick="desencriptar(this)" id="boton-desencriptar">Desencriptar</button>
+        <button type="reset" class="btn btn1" value="limpiar">Limpiar</button>
+        
+        <input class="text-input-salida" type="text" id="msj">
+ 
+        <div id="resultado"></div>
+ 
+        <input type="text" id="texto" autocomplete="off" > 
+        <button class="btn btn4" id="paste"   onclick="copiarAlPortapapales();"  >Copiar</button>
+    </form>
+ </header>
+    
+
+
+   <div class="dropdown">
+    <i class="bx bx-plus"></i>
+</div>
+
+<footer>
+    <div class="contenedor-footer">
+        <div class="content-foo">
+            <h4>phone</h4>
+            <p>3489-578064</p>
+        </div>
+        <div class="content-foo">
+            <h4>mail</h4>
+            <p>2604saul@gmail.com</p>
+        </div>
+        <div class="content-foo">
+            <h4>location</h4>
+            <p>zarate, (bs. as)</p>
+        </div>
+    </div>
+    <h2 class="titulo-final">&copy; IBrianCaleb | Hereñu Saul</h2>
+</footer>
+
+<script src="code.js"></script>
+
+</body>
+</html>
